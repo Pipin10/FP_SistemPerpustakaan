@@ -1,0 +1,68 @@
+﻿<Window x:Class="FPdata.page.menu_petugas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FPdata.page"
+        mc:Ignorable="d"
+        Title="Menu Petugas" Height="768" Width="1024">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Background="#99000122"/>
+        <Grid Grid.Row="1" Background="#9976C5EA">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="28*"/>
+
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="28*"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox Header="" Grid.Row="1" Margin="-514,24,524,61" Grid.RowSpan="2"/>
+            <TextBox Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="330" Height="38"/>
+            <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="330" Height="38"/>
+            <TextBox Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="330" Height="38"/>
+            <TextBox Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="330" Height="38"/>
+            <TextBox Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" Height="38"/>
+            <Label Content="ID Petugas" HorizontalAlignment="Left" Grid.Row="5" Width="128" FontSize="18" FontWeight="Normal" VerticalAlignment="Center" Height="38" RenderTransformOrigin="0.398,0.58" Margin="10,0,0,0" Grid.ColumnSpan="2"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="42*"/>
+                <ColumnDefinition Width="83*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+        </Grid>
+        <Label Content="ID Anggota" HorizontalAlignment="Left" Grid.Row="1" Width="118" FontSize="18" FontWeight="Normal" VerticalAlignment="Top" Height="38" Margin="8,172,0,0"/>
+        <Label Content="Nomor Buku" HorizontalAlignment="Left" Grid.Row="1" Width="128" FontSize="18" FontWeight="Normal" VerticalAlignment="Top" Height="38" RenderTransformOrigin="0.398,0.58" Margin="8,246,0,0"/>
+        <Label Content="Tanggal Pinjam" HorizontalAlignment="Left" Grid.Row="1" Width="128" FontSize="16" FontWeight="Normal" VerticalAlignment="Top" Height="38" RenderTransformOrigin="0.398,0.58" Margin="8,322,0,0"/>
+        <Label Content="Tanggal Kembali" HorizontalAlignment="Left" Grid.Row="1" Width="128" FontSize="16" FontWeight="Normal" VerticalAlignment="Top" Height="38" RenderTransformOrigin="0.398,0.58" Margin="8,396,0,0"/>
+        <Button Content="Tambah" HorizontalAlignment="Left" Margin="166,527,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="55" FontSize="18"/>
+        <Label Content="Menu Pinjaman" HorizontalAlignment="Left" Margin="166,52,0,0" VerticalAlignment="Top" Width="330" FontSize="24" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="Data saat ini" HorizontalAlignment="Left" Margin="635,117,0,0" VerticalAlignment="Top" Width="140" FontSize="18" Height="50" Grid.Row="1" RenderTransformOrigin="0.507,1.001"/>
+        <DataGrid Grid.Row="1" Margin="635,172,50,251"/>
+    </Grid>
+</Window>

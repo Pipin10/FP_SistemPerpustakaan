@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Asset\dasboard\7036 2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Asset\dasboard\7036 2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="page\menu_pinjaman.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="page\menu_anggota.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="page\menu_buku.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="page\menu_pinjaman.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="page\menu_anggota.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="page\menu_buku.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
